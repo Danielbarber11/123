@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אייבן - בוט AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="main-screen">
+            <div class="main-content">
+                <h1 class="main-title">אייבן</h1>
+                <p class="subtitle">איך אוכל לעזור לך?</p>
+                <div class="suggested-questions">
+                    <button class="question">מה הים הכי גדול בעולם?</button>
+                    <button class="question">כתוב לי סיפור קצר</button>
+                    <button class="question">מה בירת אוסטרליה?</button>
+                    <button class="question">תכנן לי טיול לסוף שבוע</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <!-- This will be hidden initially and will contain the chat messages -->
+            <div id="chat-screen" class="hidden">
+                <!-- Chat messages will be appended here -->
+            </div>
+
+            <!-- Toolbar for chat screen -->
+            <div id="chat-toolbar" class="hidden">
+                 <button>צור תמונה</button>
+                 <button>ערוך תמונה</button>
+                 <button>צור סיפור</button>
+                 <button>צור קוד</button>
+            </div>
+
+
+            <div class="input-area">
+                <button id="plus-button" class="input-button">+</button>
+                <div id="extra-options" class="hidden">
+                    <button>הוספת תמונה</button>
+                    <button>צילום תמונה</button>
+                    <button>הוספת מסמך</button>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" id="user-input" placeholder="כתוב הודעה...">
+                    <button id="send-button" class="input-button">
+                        <!-- Send Icon will be here -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
